@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body{
+   
+    background-color:  hsl(204, 43%, 93%);
+    background-image: url(./images/bg-header-desktop.png);
+   background-size:cover;
+   min-height: 100vh;
+    background-repeat: no-repeat;
+      
+      display: flex;
+    
+     
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Karla', sans-serif;
+      font-size: 18px;
+     
+      }
+
+
+
+
+
+.grid-container {
+    display: grid;
+   
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .grid-item {
+  
+    text-align: center;
+    padding: 20px;
+  
+  
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+   background-color: white;
+   text-align: left;
+   padding: 3rem;
+  }
+  
+  .item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+   
+  }
+  .item3{
+    background-color:  hsl(179, 62%, 43%);
+color: white;
+padding: 3rem;
+text-align: left;
+
+  }
+
+.item3 p{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+  
+
+  .item4{
+
+    background-color:  hsl(179, 56%, 57%);
+color: white;
+text-align: left;
+padding: 3rem;
+
+
+  }
+
+  .item4 ul{
+
+list-style-type: none;
+  }
+  .item4 ul li{
+
+    padding: .2rem;
+      }
+
+  .heading{
+
+    color:hsl(179, 62%, 43%) ;
+    margin-bottom: 1.5rem;
+  }
+  .heading3{
+
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .moneyback{
+
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+  }
+
+  .para1{
+
+    color:hsl(218, 22%, 67%);
+    margin-bottom: .5rem;
+  }
+  #dollar{
+
+    font-size: 1.8em;
+  }
+
+ .display{
+
+    display: flex;
+    justify-content: center;
+    width: 55%;
+   
+ }
+ span{
+ text-align: center;
+  padding: .5rem;
+ }
+ span p{
+  color:hsl(179, 56%, 70%);
+ }
+
+ .btn {
+    -webkit-border-radius: 16;
+    -moz-border-radius: 16;
+    border-radius: 10px;
+    font-family: 'Karla', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    border: none;
+    background: hsl(71, 73%, 54%);
+    padding: 12px 120px 12px 120px;
+    text-decoration: none;
+  }
+  
+
+  @media (max-width: 600px) {
+    .grid-container {
+      display:block;
+     
+      grid-template-columns: 50% 50%;
+   
+      width: 100%;
+     
+    }
+    .btn {
+     
+      
+      padding: 12px 87px 12px 100px;
+      
+    }
+
+    .display{
+
+      width: 66%;
+    }
+
+  }
